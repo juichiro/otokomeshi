@@ -1,0 +1,9 @@
+<h1><%= @user.name %>のお気に入りメニュー</h1>
+
+<% @favorites.each do |favorite| %>
+
+<ul>
+  <li><%= favorite.content %></li>
+  <li><%= image_tag favorite.image.url %></li>
+</ul>
+<% end %>

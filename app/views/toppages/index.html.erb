@@ -1,0 +1,46 @@
+
+<% if logged_in? %>
+<h5>ログインユーザー<span class="label label-black"><%= current_user.name %></span></h5>
+<div class='page-header'>
+  <h1 class='mincho'>みんなのレシピ</h1>
+</div>
+<div class='container-fluid'>
+<div class='row'>
+<div class='col-md-6 col-md-offset-3'>
+
+<% @posts.each do |post| %>
+
+
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h5 class="panel-title"><span class="label label-black">メニュー名</span><%= link_to post.name, post_path(post) %><span class="label label-black">作成者</span><%= link_to post.user.name, user_path(post.user) %></h5>
+	</div>
+	<% if post.post_image.attached? %>
+	<div class="panel-body panel-body-change">
+		<%= image_tag post.post_image.variant(resize: "400x400"),class:'img-responsive' %>
+	</div>
+	<% end %>
+</div>
+
+<% end %>
+</div>
+</div>
+</div>
+<%= paginate @posts %>
+<% else %>
+<div class='jumbotron jumbotron-extended'>
+  <div class='container-fluid'>
+  
+    <h1 class='mincho login_midashi'>男飯!<small>うまい！やすい！はやい！男飯レシピ共有</small></h1>
+   
+   <%= link_to '新規登録', signup_path, class:'btn btn-black btn-lg ' %>
+   <%= link_to 'ログイン', login_path, class:'btn btn-black btn-lg ' %>
+ 
+  </div>
+ 
+</div>
+
+
+<% end %>
+
+

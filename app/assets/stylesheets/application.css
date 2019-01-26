@@ -1,0 +1,182 @@
+
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+h1 {
+  color: black;
+}
+
+.inline {
+  display: inline-block;
+}
+/*showページのボタンに対する装飾*/
+@media (min-width: 750px) {
+  /* ウインドウ幅750px以上の時に適用されるスタイル */
+  .li-media {
+    display: inline-block;
+    margin-top:10px;
+    position: relative;
+    left:270px;
+  }
+}
+
+.jumbotron-extended{
+  position: relative;
+  height: 100vh;
+  min-height: 300px;
+  background: url(fat_man.jpg)center;
+  background-size:cover;
+}
+
+.btn-black{
+  background-color:black;
+  color:white;
+  border:solid 1px black;
+  margin-top: 170px;
+  margin-left: 10px;
+  padding: 20px;
+}
+
+.mincho{
+  font-family: Georgia, "游明朝体", "YuMincho", "游明朝", "Yu Mincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN W3", HiraMinProN-W3, "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+}
+
+.jumbotron .login_midashi{
+  text-align:center;
+  position:relative;
+  top:-70px;
+  color: white;
+  background-color: black;
+  border-radius: 30px;
+  border:solid 3px gray;
+  padding:10px 10px 0 10px;
+}
+nav.navbar div.container-fluid div.navbar-header a.logo{
+  font-weight:bold;
+  border:solid 7px;
+  padding: 30px 60px;
+  font-size:35px;
+  color:black;
+  background-color:white;
+}
+nav.navbar div.container-fluid div.navbar-header a.logo:hover{
+  color:gray;
+}
+nav.navbar.navbar-default.white {
+  background-color:white;
+}
+nav.navbar.navbar-default div.collapse.navbar-collapse ul li a{
+  border:black solid 2px;
+  color:black;
+  font-weight:bold;
+}
+nav.navbar.navbar-default div.collapse.navbar-collapse ul li a:hover{
+  color:gray;
+}
+div.panel-body.panel-body-change{
+  padding:0;
+}
+div.page-header h1{
+  color:black;
+  text-align:center;
+  font-weight:bold;
+  border-bottom:solid 2px black;
+}
+body{
+   font-family: Georgia, "游明朝体", "YuMincho", "游明朝", "Yu Mincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN W3", HiraMinProN-W3, "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
+}
+.label-black{
+  background-color:black;
+}
+
+.pagination li a{
+  color:black;
+}
+/*ページネーションの現在ページの部分の色を紺色から黒へ変更。*/
+ul.pagination li.active a{
+  background-color:black;
+  border-color:black;
+}
+/*投稿のボタンを黒くする*/
+.btn-black1{
+  background-color:black;
+  color:white;
+}
+.black-addon{
+  background-color:black;
+  color:white;
+}
+div.menu-button ul li{
+  list-style:none;
+  
+}
+
+div.panel.panel-default div.panel-heading h5.panel-title .btn.btn-black2{
+  padding:2px;
+  background-color:black;
+  color:white;
+}
+div.panel.panel-default div.panel-heading h5.panel-title .btn.btn-black2:hover{
+  background-color:gray;
+}
+
+footer{
+  text-align:center;
+  margin-top:20px;
+}
+
+/*フッターの色*/
+.footer-color{
+  background-color:#3f3f3f;
+  padding:10px;
+}
+.footer-color ul li a{
+  color:white;
+}
+
+.footer-color ul li{
+  border-left:solid 2px white;
+  padding-left:8px;
+}
+.footer-color ul li:last-child{
+  border-right:solid 2px white;
+  padding-right:8px;
+}
+footer small{
+  color:white;
+}
+div.small-color{
+  background-color:black;
+ 
+}
+#wrapper{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+footer{
+  margin-top:auto;
+}
+
+div.collapse ul li:active{
+  background-color:gray;
+}
+h1 small{
+  font-size: 60%
+}
+main nav.navbar div.container-fluid div.navbar-header a.navbar-brand.mincho.logo{
+  font-size: 26px;
+}

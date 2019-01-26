@@ -1,0 +1,21 @@
+<div class='page-header'>
+  <h1>何食べる？</h1>
+</div>
+<div class='container-fluid'>
+<div class='row'>
+	<div class='col-md-6 col-md-offset-3'>
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h5 class="panel-title"><span class="label label-black">メニュー名</span><%= link_to @today_recipe.name, post_path(@today_recipe) %><span class="label label-black">作成者</span><%= link_to @today_recipe.user.name, user_path(@today_recipe.user) %></h5>
+	</div>
+	<% if @today_recipe.post_image.attached? %>
+	<div class="panel-body">
+		<%= image_tag @today_recipe.post_image.variant(resize: "400x400"),class:'img-responsive' %>
+	</div>
+	<% end %>
+	
+</div>
+
+</div>
+</div>
+</div>

@@ -1,0 +1,26 @@
+<div class='page-header'>
+<h1><%= @user.name %>のマイレシピ</h1> 
+</div>
+
+<div class='container-fluid'>
+<div class='row'>
+  <div class='col-md-6 col-md-offset-3'>
+<% @posts.each do |post| %>
+
+<div class="panel panel-default">
+	<div class="panel-heading">
+		<h5 class="panel-title"><span class="label label-black">レシピ名</span><%= post.name %><%= link_to '作り方を見る', post_path(post), class:'btn btn-black2' %></h5>
+	</div>
+	<div class="panel-body">
+		<%= image_tag post.post_image.variant(resize: "400x400"),class:'img-responsive' %>
+	</div>
+</div>
+
+<% end %>
+
+</div>
+</div>
+</div>
+
+
+
