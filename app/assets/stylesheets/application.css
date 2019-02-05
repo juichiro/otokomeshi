@@ -44,7 +44,7 @@ h1 {
   background-color:black;
   color:white;
   border:solid 1px black;
-  margin-top: 170px;
+  margin-top: 200px;
   margin-left: 10px;
   padding: 20px;
 }
@@ -53,15 +53,15 @@ h1 {
   font-family: Georgia, "游明朝体", "YuMincho", "游明朝", "Yu Mincho", "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN W3", HiraMinProN-W3, "ヒラギノ明朝 ProN", "Hiragino Mincho ProN", "ヒラギノ明朝 Pro", "Hiragino Mincho Pro", "HGS明朝E", "ＭＳ Ｐ明朝", "MS PMincho", serif;
 }
 
-.jumbotron .login_midashi{
-  text-align:center;
-  position:relative;
-  top:-70px;
-  color: white;
-  background-color: black;
-  border-radius: 30px;
-  border:solid 3px gray;
-  padding:10px 10px 0 10px;
+.jumbotron .login_midashi {
+    text-align: left;
+    position: relative;
+    top: -70px;
+    color: black;
+    /* background-color: black; */
+    border-radius: 10px;
+    border-bottom: solid; 
+    padding: 10px 10px 0 10px;
 }
 nav.navbar div.container-fluid div.navbar-header a.logo{
   font-weight:bold;
@@ -139,7 +139,7 @@ footer{
 
 /*フッターの色*/
 .footer-color{
-  background-color:#3f3f3f;
+  background-color:#101010;
   padding:10px;
 }
 .footer-color ul li a{
