@@ -42,7 +42,8 @@ class PostsController < ApplicationController
   end
   
   def today_recipe
-   @today_recipe = Post.offset(rand(Post.count)).first
+   posts = Post.all
+   @today_recipe = posts.sample
   end 
   private
    def params_post
