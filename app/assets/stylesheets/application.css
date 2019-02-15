@@ -95,9 +95,7 @@ nav.navbar.navbar-default div.collapse.navbar-collapse ul li a{
 nav.navbar.navbar-default div.collapse.navbar-collapse ul li a:hover{
   color:gray;
 }
-div.panel-body.panel-body-change{
-  padding:0;
-}
+
 div.page-header h1{
   color:black;
   text-align:center;
