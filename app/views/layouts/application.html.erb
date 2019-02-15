@@ -17,10 +17,10 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
    
- 
+   <%= favicon_link_tag('man.png') %>
   </head>
 
-  <body>
+  <body class='container'>
       <div id='wrapper'>
   <main>
   <nav class="navbar navbar-default white">
@@ -42,7 +42,7 @@
 				<li><a href="/today_recipe">何食べる？</a></li>
 				<li><a  href="/posts/new">新しい男メシを投稿する</a></li>
 				<% if logged_in? %>
-				<li><%= link_to 'ログアウト', logout_path, method: :delete %></li>
+				<li><%= link_to 'ログアウト', logout_path, method: :delete, class:'logout' %></li>
 				<% end %>
 			</ul>
 		</div>

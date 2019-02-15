@@ -68,10 +68,11 @@ h1 {
 nav.navbar div.container-fluid div.navbar-header a.logo{
   font-weight:bold;
   border:solid 7px;
-  padding: 30px 60px;
+  padding: 20px 40px;
   font-size:35px;
   color:black;
   background-color:white;
+  padding-bottom:35px;
 }
 nav.navbar div.container-fluid div.navbar-header a.logo:hover{
   color:gray;
@@ -83,6 +84,13 @@ nav.navbar.navbar-default div.collapse.navbar-collapse ul li a{
   border:black solid 2px;
   color:black;
   font-weight:bold;
+      
+}
+@media (min-width: 750px) {
+  /* ウインドウ幅750px以上の時に適用されるスタイル */
+   nav.navbar.navbar-default div.collapse.navbar-collapse ul li a{
+   padding: 22px 10px;
+  }
 }
 nav.navbar.navbar-default div.collapse.navbar-collapse ul li a:hover{
   color:gray;
@@ -101,6 +109,8 @@ body{
 }
 .label-black{
   background-color:black;
+  margin-right:10px;
+  margin-left:5px;
 }
 
 .pagination li a{
@@ -181,4 +191,20 @@ h1 small{
 }
 main nav.navbar div.container-fluid div.navbar-header a.navbar-brand.mincho.logo{
   font-size: 26px;
+}
+.alert-danger {
+    color:black;
+    background-color: whitesmoke;
+    border-color: whitesmoke;
+}
+.alert-success{
+  color:black;
+    background-color: whitesmoke;
+    border-color: whitesmoke;
+}
+
+nav.navbar.navbar-default div.collapse.navbar-collapse ul li a.logout{
+  background-color:lightgray;
+  
+
 }
