@@ -21,6 +21,15 @@
 	</div>
 	<% end %>
 </div>
+<div class="media">
+	<div class="media-body">
+		<h4 class="media-heading"><span class="label label-black">レシピ名</span><%= link_to post.name, post_path(post) %><span class="label label-black">作成者</span><%= link_to post.user.name, user_path(post.user) %></h4>
+		<% if post.post_image.attached? %>
+		<%= image_tag post.post_image.variant(resize: "400x400"),class:'img-responsive' %>
+		<% end %>
+	</div>
+</div>
+
 
 <% end %>
 </div>
