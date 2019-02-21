@@ -209,3 +209,7 @@ nav.navbar.navbar-default div.collapse.navbar-collapse ul li a.logout{
 html {
   background-color:whitesmoke;
 }
+p.recipe {
+    border: solid 1px;
+    padding: 10px;
+}
