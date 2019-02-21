@@ -218,3 +218,7 @@ p.recipe {
     border-radius: 10px;
     padding: 20px;
 }
+
+div.media div.media-body h5.media-heading a{
+  color:black;
+}

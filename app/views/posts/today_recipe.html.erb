@@ -7,7 +7,7 @@
 
 <div class="media">
 	<div class="media-body">
-		<h4 class="media-heading"><span class="label label-black">レシピ名</span><%= link_to @today_recipe.name, post_path(@today_recipe) %><span class="label label-black">作成者</span><%= link_to @today_recipe.user.name, user_path(@today_recipe.user) %></h4>
+		<h5 class="media-heading"><span class="label label-black">レシピ名</span><%= link_to @today_recipe.name, post_path(@today_recipe) %><span class="label label-black">作成者</span><%= link_to @today_recipe.user.name, user_path(@today_recipe.user) %></h5>
 		<% if @today_recipe.post_image.attached? %>
 		<%= image_tag @today_recipe.post_image.variant(resize: "400x400"),class:'img-responsive' %>
 		<% end %>
