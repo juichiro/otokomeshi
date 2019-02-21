@@ -15,7 +15,14 @@
 	</div>
 	<% end %>
 </div>
-
+<div class="media">
+	<div class="media-body">
+		<h4 class="media-heading"><span class="label label-black">レシピ名</span><%= link_to myfavorite.name, post_path(myfavorite) %><span class="label label-black">作成者</span><%= link_to myfavorite.user.name, user_path(myfavorite.user) %></h4>
+		<% if myfavorite.post_image.attached? %>
+		<%= image_tag myfavorite.post_image.variant(resize: "400x400"),class:'img-responsive' %>
+		<% end %>
+	</div>
+</div>
 <% end %>
 </div>
 </div>
